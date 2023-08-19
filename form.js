@@ -67,6 +67,8 @@ const validateForm = (formSelector) => {
     if (formElement.checkValidity()) {
       document.querySelector(".submit-success").style.display = "grid";
       document.querySelector("#form").style.display = "none";
+    } else {
+      console.error("Form invalid!!!")
     }
   });
 };

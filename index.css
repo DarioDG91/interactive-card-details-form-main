@@ -177,6 +177,11 @@ input {
 
 }
 
+input:focus {
+    outline: none;
+    border-color: hsl(278, 94%, 30%);
+}
+
 
 
 input::placeholder {
@@ -253,7 +258,7 @@ input::placeholder {
     height: 80px;
     width: 80px;
     background-repeat: no-repeat;
-   
+
 }
 
 .submit-success h1 {
@@ -261,7 +266,7 @@ input::placeholder {
     letter-spacing: 3px;
     font-weight: 500;
     font-size: 1.8125rem;
-    margin: 2.125rem 0 1rem 0 ;
+    margin: 2.125rem 0 1rem 0;
 }
 
 .submit-success p {
@@ -357,5 +362,5 @@ input::placeholder {
         padding: 1.5rem;
     }
 
-   
+
 }

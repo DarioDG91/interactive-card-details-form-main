@@ -46,7 +46,6 @@
                   <div class="year">00</div>
                 </div>
               </div>
-
             </div>
           </div>
           <div class="back-card">
@@ -64,7 +63,7 @@
                   name="name"
                   minlength="2"
                   maxlength="32"
-                  pattern="[A-Za-z ]{1,32}"
+                  pattern="^[a-zA-ZÀ-ÿ\s]+$"
                   placeholder="e.g. Jane Appleseed"
                   required
                 />
@@ -99,7 +98,8 @@
                     id="month"
                     minlength="2"
                     maxlength="2"
-                    pattern="\d{2}"
+                    pattern="^(0[1-9]|1[0-2])$"
+                    inputmode="numeric"
                     placeholder="MM"
                     required
                   />
@@ -113,7 +113,8 @@
                     id="year"
                     minlength="2"
                     maxlength="2"
-                    pattern="\d{2}"
+                    pattern="^(2[3-9]|[3-9][0-9])$"
+                    inputmode="numeric"
                     placeholder="YY"
                     required
                   />
@@ -131,13 +132,16 @@
                   minlength="3"
                   maxlength="3"
                   pattern="\d{3}"
+                  inputmode="numeric"
                   placeholder="e.g. 123"
                   required
                 />
               </label>
               <div class="error-message"></div>
             </div>
-            <button class="ax-button btn" id="submit-btn" type="submit">Confirm</button>
+            <button class="ax-button btn" id="submit-btn" type="submit">
+              Confirm
+            </button>
           </form>
           <div class="submit-success">
             <div class="success-icon"></div>
